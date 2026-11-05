@@ -8,7 +8,7 @@ const gallery = document.getElementById('gallery');
 // Use the starter's date limits from dateRange.js
 if (typeof setupDateInputs === 'function') setupDateInputs(startInput, endInput);
 
-const API_KEY = 'DEMO_KEY'; // swap in your own key from api.nasa.gov if you have one
+const API_KEY = 'Rrq967zc7nhtzzjBPNLPBp6FQcQ9wFDdGcWhk8b8'
 
 // LevelUp: random "Did You Know?" fact
 const facts = [
