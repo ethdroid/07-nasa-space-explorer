@@ -142,3 +142,32 @@ button:hover {
   font-size: 48px;
   margin-bottom: 20px;
 }
+
+/* NASA branding */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body { background: #000; color: #fff; font-family: 'Inter', Helvetica, Arial, sans-serif; }
+h1, h2, h3 { font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; }
+button { background: #0B3D91; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; cursor: pointer; font-weight: 700; }
+button:hover { background: #FC3D21; }
+
+.fact-box { background: #0B3D91; border-left: 6px solid #FC3D21; padding: 14px 18px; margin: 20px auto; max-width: 1100px; border-radius: 4px; }
+
+#gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: 1100px; margin: 20px auto; }
+.gallery-item { background: #111; border: 1px solid #333; border-radius: 6px; padding: 10px; cursor: pointer; }
+.gallery-item h3 { font-size: 1rem; margin: 10px 0 4px; }
+.gallery-item p { color: #aaa; margin: 0; }
+.thumb { position: relative; overflow: hidden; border-radius: 4px; height: 200px; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.gallery-item:hover .thumb img { transform: scale(1.08); } /* hover zoom */
+.video-badge { position: absolute; top: 8px; left: 8px; background: #FC3D21; padding: 3px 8px; border-radius: 3px; font-size: 0.8rem; }
+.video-placeholder { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem; background: #0B3D91; }
+.loading { grid-column: 1 / -1; text-align: center; font-size: 1.2rem; }
+
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 20px; }
+.modal.hidden { display: none; }
+.modal-content { background: #111; border: 2px solid #0B3D91; border-radius: 8px; max-width: 900px; max-height: 90vh; overflow-y: auto; padding: 24px; position: relative; }
+.modal-content img { width: 100%; border-radius: 4px; }
+.modal-content iframe { width: 100%; aspect-ratio: 16/9; border: none; }
+.modal-close { position: absolute; top: 8px; right: 12px; font-size: 1.6rem; padding: 2px 10px; }
+.modal-date { color: #aaa; }
+.video-link { display: inline-block; background: #FC3D21; color: #fff; padding: 12px 20px; border-radius: 4px; text-decoration: none; }
